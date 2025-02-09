@@ -60,7 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Header from "../../Header"; // plasmic-import: FTebs6dNlwip/component
-import HeaderWrapper from "../../HeaderWrapper"; // plasmic-import: 8MLXY57WFMl9/component
 import Section1 from "../../Section1"; // plasmic-import: i3DJJXTFYngM/component
 import Section2 from "../../Section2"; // plasmic-import: EW31KyjAcMc6/component
 import Section3 from "../../Section3"; // plasmic-import: vPpVFzejwR8K/component
@@ -97,8 +96,8 @@ export const PlasmicHomepageWrapper__ArgProps = new Array<ArgPropType>(
 
 export type PlasmicHomepageWrapper__OverridesType = {
   homepageWrapper?: Flex__<"div">;
+  freeBox?: Flex__<"div">;
   homepageHeader?: Flex__<typeof Header>;
-  homepageWrapperHeader?: Flex__<typeof HeaderWrapper>;
 };
 
 export interface DefaultHomepageWrapperProps {
@@ -180,18 +179,15 @@ function PlasmicHomepageWrapper__RenderFunc(props: {
         }
       )}
     >
-      <div className={classNames(projectcss.all, sty.freeBox__h3Ade)}>
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
+      >
         <Header
           data-plasmic-name={"homepageHeader"}
           data-plasmic-override={overrides.homepageHeader}
           className={classNames("__wab_instance", sty.homepageHeader)}
-        />
-      </div>
-      <div className={classNames(projectcss.all, sty.freeBox__yrgSf)}>
-        <HeaderWrapper
-          data-plasmic-name={"homepageWrapperHeader"}
-          data-plasmic-override={overrides.homepageWrapperHeader}
-          className={classNames("__wab_instance", sty.homepageWrapperHeader)}
         />
       </div>
       {renderPlasmicSlot({
@@ -246,21 +242,17 @@ function PlasmicHomepageWrapper__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  homepageWrapper: [
-    "homepageWrapper",
-    "homepageHeader",
-    "homepageWrapperHeader"
-  ],
-  homepageHeader: ["homepageHeader"],
-  homepageWrapperHeader: ["homepageWrapperHeader"]
+  homepageWrapper: ["homepageWrapper", "freeBox", "homepageHeader"],
+  freeBox: ["freeBox", "homepageHeader"],
+  homepageHeader: ["homepageHeader"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   homepageWrapper: "div";
+  freeBox: "div";
   homepageHeader: typeof Header;
-  homepageWrapperHeader: typeof HeaderWrapper;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -323,8 +315,8 @@ export const PlasmicHomepageWrapper = Object.assign(
   makeNodeComponent("homepageWrapper"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     homepageHeader: makeNodeComponent("homepageHeader"),
-    homepageWrapperHeader: makeNodeComponent("homepageWrapperHeader"),
 
     // Metadata about props expected for PlasmicHomepageWrapper
     internalVariantProps: PlasmicHomepageWrapper__VariantProps,
