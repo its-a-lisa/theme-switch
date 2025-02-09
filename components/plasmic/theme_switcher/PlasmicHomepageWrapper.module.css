@@ -13,7 +13,7 @@
   padding: 8px;
 }
 .homepageWrapperHeader:global(.__wab_instance) {
-  position: relative;
+  max-width: 100%;
 }
 .header__fo1T:global(.__wab_instance) {
   position: relative;

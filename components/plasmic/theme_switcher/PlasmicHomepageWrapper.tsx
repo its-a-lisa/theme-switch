@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import HeaderWrapper from "../../HeaderWrapper"; // plasmic-import: 8MLXY57WFMl9/component
 import Header from "../../Header"; // plasmic-import: FTebs6dNlwip/component
 import Section1 from "../../Section1"; // plasmic-import: i3DJJXTFYngM/component
 import Section2 from "../../Section2"; // plasmic-import: EW31KyjAcMc6/component
@@ -87,20 +88,20 @@ export const PlasmicHomepageWrapper__VariantProps =
   new Array<VariantPropType>();
 
 export type PlasmicHomepageWrapper__ArgsType = {
-  homepageWrapper2?: React.ReactNode;
+  homepageSlot?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicHomepageWrapper__ArgsType;
 export const PlasmicHomepageWrapper__ArgProps = new Array<ArgPropType>(
-  "homepageWrapper2"
+  "homepageSlot"
 );
 
 export type PlasmicHomepageWrapper__OverridesType = {
   homepageWrapper?: Flex__<"div">;
-  homepageWrapperHeader?: Flex__<typeof Header>;
+  homepageWrapperHeader?: Flex__<typeof HeaderWrapper>;
 };
 
 export interface DefaultHomepageWrapperProps {
-  homepageWrapper2?: React.ReactNode;
+  homepageSlot?: React.ReactNode;
   className?: string;
 }
 
@@ -178,7 +179,7 @@ function PlasmicHomepageWrapper__RenderFunc(props: {
         }
       )}
     >
-      <Header
+      <HeaderWrapper
         data-plasmic-name={"homepageWrapperHeader"}
         data-plasmic-override={overrides.homepageWrapperHeader}
         className={classNames("__wab_instance", sty.homepageWrapperHeader)}
@@ -233,7 +234,7 @@ function PlasmicHomepageWrapper__RenderFunc(props: {
             />
           </React.Fragment>
         ),
-        value: args.homepageWrapper2
+        value: args.homepageSlot
       })}
     </div>
   ) as React.ReactElement | null;
@@ -248,7 +249,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   homepageWrapper: "div";
-  homepageWrapperHeader: typeof Header;
+  homepageWrapperHeader: typeof HeaderWrapper;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";

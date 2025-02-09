@@ -460,6 +460,19 @@
           "cssFilePath": "plasmic/theme_switcher/PlasmicHomepageWrapper.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "8MLXY57WFMl9",
+          "name": "HeaderWrapper",
+          "type": "managed",
+          "projectId": "9yN3pGwAh9CWVe2LXGsETn",
+          "renderModuleFilePath": "plasmic/theme_switcher/PlasmicHeaderWrapper.tsx",
+          "importSpec": {
+            "modulePath": "HeaderWrapper.tsx"
+          },
+          "cssFilePath": "plasmic/theme_switcher/PlasmicHeaderWrapper.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

@@ -403,19 +403,29 @@
           "checksum": "b2c2be6b885b6bb8f4d7ef06cd912450"
         },
         {
+          "type": "renderModule",
+          "assetId": "VCRlPui118LP",
+          "checksum": "e26eaf1f5a4332063e3151910ca34d74"
+        },
+        {
+          "type": "cssRules",
+          "assetId": "VCRlPui118LP",
+          "checksum": "e26eaf1f5a4332063e3151910ca34d74"
+        },
+        {
           "assetId": "9yN3pGwAh9CWVe2LXGsETn",
           "type": "projectCss",
           "checksum": "0ea95cbda0f3fd540d678f0d6c2d7a4a"
         },
         {
           "type": "renderModule",
-          "assetId": "VCRlPui118LP",
-          "checksum": "f7341778952287f0e41936753b9a1b5d"
+          "assetId": "8MLXY57WFMl9",
+          "checksum": "74696e423c14b20c970db2940e294d58"
         },
         {
           "type": "cssRules",
-          "assetId": "VCRlPui118LP",
-          "checksum": "f7341778952287f0e41936753b9a1b5d"
+          "assetId": "8MLXY57WFMl9",
+          "checksum": "74696e423c14b20c970db2940e294d58"
         }
       ],
       "codegenVersion": "0.0.1"
