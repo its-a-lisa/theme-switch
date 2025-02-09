@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import HomepageWrapper from "../../HomepageWrapper"; // plasmic-import: VCRlPui118LP/component
 import Header from "../../Header"; // plasmic-import: FTebs6dNlwip/component
 import Section1 from "../../Section1"; // plasmic-import: i3DJJXTFYngM/component
 import Section2 from "../../Section2"; // plasmic-import: EW31KyjAcMc6/component
@@ -91,19 +92,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   homepage?: Flex__<"div">;
-  homepageWrapper?: Flex__<"div">;
-  homepageHeader?: Flex__<typeof Header>;
-  freeBox?: Flex__<"div">;
-  section1?: Flex__<typeof Section1>;
-  section2?: Flex__<typeof Section2>;
-  section3?: Flex__<typeof Section3>;
-  section4?: Flex__<typeof Section4>;
-  section5?: Flex__<typeof Section5>;
-  section6?: Flex__<typeof Section6>;
-  section7?: Flex__<typeof Section7>;
-  section8?: Flex__<typeof Section8>;
-  section9?: Flex__<typeof Section9>;
-  footer?: Flex__<typeof Footer>;
+  homepageWrapper?: Flex__<typeof HomepageWrapper>;
 };
 
 export interface DefaultHomepageProps {}
@@ -192,82 +181,11 @@ function PlasmicHomepage__RenderFunc(props: {
             }
           )}
         >
-          <div
+          <HomepageWrapper
             data-plasmic-name={"homepageWrapper"}
             data-plasmic-override={overrides.homepageWrapper}
-            className={classNames(projectcss.all, sty.homepageWrapper)}
-          >
-            <Header
-              data-plasmic-name={"homepageHeader"}
-              data-plasmic-override={overrides.homepageHeader}
-              className={classNames("__wab_instance", sty.homepageHeader)}
-            />
-
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(projectcss.all, sty.freeBox)}
-            >
-              <Section1
-                data-plasmic-name={"section1"}
-                data-plasmic-override={overrides.section1}
-                className={classNames("__wab_instance", sty.section1)}
-              />
-
-              <Section2
-                data-plasmic-name={"section2"}
-                data-plasmic-override={overrides.section2}
-                className={classNames("__wab_instance", sty.section2)}
-              />
-
-              <Section3
-                data-plasmic-name={"section3"}
-                data-plasmic-override={overrides.section3}
-                className={classNames("__wab_instance", sty.section3)}
-              />
-
-              <Section4
-                data-plasmic-name={"section4"}
-                data-plasmic-override={overrides.section4}
-                className={classNames("__wab_instance", sty.section4)}
-              />
-
-              <Section5
-                data-plasmic-name={"section5"}
-                data-plasmic-override={overrides.section5}
-                className={classNames("__wab_instance", sty.section5)}
-              />
-
-              <Section6
-                data-plasmic-name={"section6"}
-                data-plasmic-override={overrides.section6}
-                className={classNames("__wab_instance", sty.section6)}
-              />
-
-              <Section7
-                data-plasmic-name={"section7"}
-                data-plasmic-override={overrides.section7}
-                className={classNames("__wab_instance", sty.section7)}
-              />
-
-              <Section8
-                data-plasmic-name={"section8"}
-                data-plasmic-override={overrides.section8}
-                className={classNames("__wab_instance", sty.section8)}
-              />
-
-              <Section9
-                data-plasmic-name={"section9"}
-                data-plasmic-override={overrides.section9}
-                className={classNames("__wab_instance", sty.section9)}
-              />
-            </div>
-            <Footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames("__wab_instance", sty.footer)}
-            />
-          </div>
+            className={classNames("__wab_instance", sty.homepageWrapper)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -275,79 +193,15 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  homepage: [
-    "homepage",
-    "homepageWrapper",
-    "homepageHeader",
-    "freeBox",
-    "section1",
-    "section2",
-    "section3",
-    "section4",
-    "section5",
-    "section6",
-    "section7",
-    "section8",
-    "section9",
-    "footer"
-  ],
-  homepageWrapper: [
-    "homepageWrapper",
-    "homepageHeader",
-    "freeBox",
-    "section1",
-    "section2",
-    "section3",
-    "section4",
-    "section5",
-    "section6",
-    "section7",
-    "section8",
-    "section9",
-    "footer"
-  ],
-  homepageHeader: ["homepageHeader"],
-  freeBox: [
-    "freeBox",
-    "section1",
-    "section2",
-    "section3",
-    "section4",
-    "section5",
-    "section6",
-    "section7",
-    "section8",
-    "section9"
-  ],
-  section1: ["section1"],
-  section2: ["section2"],
-  section3: ["section3"],
-  section4: ["section4"],
-  section5: ["section5"],
-  section6: ["section6"],
-  section7: ["section7"],
-  section8: ["section8"],
-  section9: ["section9"],
-  footer: ["footer"]
+  homepage: ["homepage", "homepageWrapper"],
+  homepageWrapper: ["homepageWrapper"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   homepage: "div";
-  homepageWrapper: "div";
-  homepageHeader: typeof Header;
-  freeBox: "div";
-  section1: typeof Section1;
-  section2: typeof Section2;
-  section3: typeof Section3;
-  section4: typeof Section4;
-  section5: typeof Section5;
-  section6: typeof Section6;
-  section7: typeof Section7;
-  section8: typeof Section8;
-  section9: typeof Section9;
-  footer: typeof Footer;
+  homepageWrapper: typeof HomepageWrapper;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -411,18 +265,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     homepageWrapper: makeNodeComponent("homepageWrapper"),
-    homepageHeader: makeNodeComponent("homepageHeader"),
-    freeBox: makeNodeComponent("freeBox"),
-    section1: makeNodeComponent("section1"),
-    section2: makeNodeComponent("section2"),
-    section3: makeNodeComponent("section3"),
-    section4: makeNodeComponent("section4"),
-    section5: makeNodeComponent("section5"),
-    section6: makeNodeComponent("section6"),
-    section7: makeNodeComponent("section7"),
-    section8: makeNodeComponent("section8"),
-    section9: makeNodeComponent("section9"),
-    footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -227,7 +227,8 @@
           "componentImportPath": "@plasmicpkgs/react-aria/skinny/registerDialog"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "9yN3pGwAh9CWVe2LXGsETn",
@@ -444,6 +445,19 @@
             "modulePath": "Header.tsx"
           },
           "cssFilePath": "plasmic/theme_switcher/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "VCRlPui118LP",
+          "name": "HomepageWrapper",
+          "type": "managed",
+          "projectId": "9yN3pGwAh9CWVe2LXGsETn",
+          "renderModuleFilePath": "plasmic/theme_switcher/PlasmicHomepageWrapper.tsx",
+          "importSpec": {
+            "modulePath": "HomepageWrapper.tsx"
+          },
+          "cssFilePath": "plasmic/theme_switcher/PlasmicHomepageWrapper.module.css",
           "scheme": "blackbox",
           "componentType": "component"
         }

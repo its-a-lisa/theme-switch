@@ -328,7 +328,15 @@ function PlasmicHeader__RenderFunc(props: {
               data-plasmic-override={overrides.themeSwitch}
               {...child$Props}
             >
-              {"Theme"}
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___2NhyJ
+                )}
+              >
+                {"Theme"}
+              </div>
             </Switch>
           );
         })()}
