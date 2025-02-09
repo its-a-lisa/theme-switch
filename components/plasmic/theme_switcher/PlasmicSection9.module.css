@@ -1,0 +1,62 @@
+.section9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: linear-gradient(
+      var(--token-NRrxnc82eF_Z),
+      var(--token-NRrxnc82eF_Z)
+    ),
+    url("/plasmic/theme_switcher/images/image10.png") 0% 0% / cover;
+  position: relative;
+  min-width: 0;
+  padding: 169px 8px;
+}
+.freeBox {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 8px;
+}
+.h2 {
+  position: relative;
+  height: auto;
+  max-width: 800px;
+  color: var(--token-VWlkMx_M0iaS);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+.button:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  margin-top: 26px;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.svg__tdjve {
+  position: relative;
+  height: 1em;
+}
+.svg__zv68K {
+  position: relative;
+  height: 1em;
+}

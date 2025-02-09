@@ -1,0 +1,76 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  grid-column-start: 1 !important;
+  grid-column-end: -1 !important;
+  min-height: 0;
+  padding: 8px;
+}
+.homepageWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--token-ShR07UXIaXXO);
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.homepageHeader:global(.__wab_instance) {
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .homepageHeader:global(.__wab_instance) {
+    align-self: auto;
+  }
+}
+.freeBox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: flex-end;
+  min-width: 0;
+  padding: 8px;
+}
+.section3:global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.section4:global(.__wab_instance) {
+  position: relative;
+}
+.section5:global(.__wab_instance) {
+  position: relative;
+}
+.section6:global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+.section7:global(.__wab_instance) {
+  position: relative;
+}
+.section8:global(.__wab_instance) {
+  position: relative;
+}
+.section9:global(.__wab_instance) {
+  position: relative;
+}
+.footer:global(.__wab_instance) {
+  position: relative;
+}
