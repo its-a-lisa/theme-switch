@@ -60,7 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import HomepageWrapper from "../../HomepageWrapper"; // plasmic-import: VCRlPui118LP/component
-import Header from "../../Header"; // plasmic-import: FTebs6dNlwip/component
 import Section1 from "../../Section1"; // plasmic-import: i3DJJXTFYngM/component
 import Section2 from "../../Section2"; // plasmic-import: EW31KyjAcMc6/component
 import Section3 from "../../Section3"; // plasmic-import: vPpVFzejwR8K/component
