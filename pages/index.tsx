@@ -1,22 +1,19 @@
 import * as React from "react";
-import { PageParamsProvider as PageParamsProvider__ } from "@plasmicapp/react-web/lib/host";
+import * as ph from "@plasmicapp/react-web/lib/host";
 
-import { ThemeContext } from "../components/plasmic/theme_switcher/PlasmicGlobalVariant__Theme";
+import ScreenVariantProvider from "../components/plasmic/theme_switcher/PlasmicGlobalVariant__Screen";
 import { PlasmicHomepage } from "../components/plasmic/theme_switcher/PlasmicHomepage";
 import { useRouter } from "next/router";
 
 function Homepage() {
 
   return (
-    <ThemeContext.Provider value={undefined}>
-      <PageParamsProvider__
-        route={useRouter()?.pathname}
+    <ph.PageParamsProvider
         params={useRouter()?.query}
         query={useRouter()?.query}
       >
         <PlasmicHomepage />
-      </PageParamsProvider__>
-    </ThemeContext.Provider>
+        </ph.PageParamsProvider>
   );
 }
 
